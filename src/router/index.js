@@ -1,6 +1,6 @@
-import Home from '../Pages/Home/View.vue'
-import Projects from '../Pages/Projects/View.vue'
-import Resume from '../Pages/Resume/View.vue'
+import Home from '../pages/Home/View.vue'
+import Projects from '../pages/Projects/View.vue'
+import Resume from '../pages/Resume/View.vue'
 import BlankLayout from '../layouts/blank.vue'
 import OtherLayout from '../layouts/other.vue'
 
