@@ -4,7 +4,7 @@
       class=" bg-white dark:bg-zinc-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-lg"
     >
       <h3
-        class="text-orange-600 text-base font-medium tracking-tight"
+        class=" text-base font-medium tracking-tight"
       >
         Personal Profile
       </h3>
@@ -17,7 +17,7 @@
       class="mt-5 bg-white dark:bg-zinc-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-lg"
     >
       <h3
-        class="text-orange-600 text-base font-medium tracking-tight"
+        class=" text-base font-medium tracking-tight"
       >
         Educational Training
       </h3>

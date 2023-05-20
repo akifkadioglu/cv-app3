@@ -1,6 +1,5 @@
 <template>
-  <DividerContent text="Projects" />
-  <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6">
+  <div class="mt-10 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6">
     
     <div
       v-for="(item, index) in projects"
