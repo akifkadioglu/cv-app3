@@ -2,7 +2,7 @@
   <router-link to="/" :replace="true">
     <img
       class="transition logo rounded-full"
-      src="../assets/home_avatar.webp"
+      v-lazy="{ src: src }"
       alt="akifkadioglu"
       :width="size"
       :height="size"
@@ -12,6 +12,8 @@
 </template>
 
 <script>
+import image from './../assets/home_avatar.webp'
+
 export default {
   name: "Home-Avatar",
   props: {
@@ -21,7 +23,9 @@ export default {
     },
   },
   data() {
-    return {};
+    return {
+      src:image
+    };
   },
 };
 </script>
