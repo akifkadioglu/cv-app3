@@ -1,8 +1,8 @@
 <template>
   <router-link to="/" :replace="true">
-    <div class="transition max-w-full max-h-full logo">
+    <div class="transition logo">
       <img
-        class=" rounded-full"
+        class="max-w-full max-h-full rounded-full"
         src="../assets/home_avatar.webp"
         alt="akifkadioglu"
         :width="size"
