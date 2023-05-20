@@ -1,6 +1,9 @@
 <template>
   <div>
-    <button class="my-10 flex items-center font-bold font-mono hover:underline" @click="$router.replace({name:routeName.BLOG})">
+    <button
+      class="my-10 flex items-center font-bold font-mono hover:underline"
+      @click="$router.replace({ name: routeName.BLOG })"
+    >
       <mdicon
         :size="isMobile ? 25 : 40"
         name="arrow-left"
@@ -8,7 +11,7 @@
       />
       <span class="mx-2"> Other Posts </span>
     </button>
-    <div v-html="renderedContent"></div>
+    <div v-html="content" />
   </div>
 </template>
 
@@ -22,11 +25,6 @@ export default {
 
       content: "",
     };
-  },
-  computed: {
-    renderedContent() {
-      return this.content;
-    },
   },
   mounted() {
     this.loadContent();

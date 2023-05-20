@@ -33,11 +33,11 @@ export default {
   data() {
     return {
       posts: [
-        {
-          title: "title 1",
-          summary: "summary",
-          path: "text",
-        },
+        /* {
+          title: "Benimle Full-Stack projeye başlamak",
+          summary: "Full-stack bir projeye nasıl başlarım, hangi dilleri ve frameworkleri kullanırım..",
+          path: "full-stack-projeye-baslamak",
+        }, */
       ],
     };
   },
