@@ -1,15 +1,13 @@
 <template>
   <router-link to="/" :replace="true">
-    <div class="transition logo">
-      <img
-        class="max-w-full max-h-full rounded-full"
-        src="../assets/home_avatar.webp"
-        alt="akifkadioglu"
-        :width="size"
-        :height="size"
-        rel="preload"
-      />
-    </div>
+    <img
+      class="transition logo rounded-full"
+      src="../assets/home_avatar.webp"
+      alt="akifkadioglu"
+      :width="size"
+      :height="size"
+      rel="preload"
+    />
   </router-link>
 </template>
 
@@ -28,6 +26,10 @@ export default {
 };
 </script>
 <style scoped>
+.logo {
+  max-width: 100%;
+  max-height: 100%;
+}
 .logo:hover {
   filter: drop-shadow(0 0 1em #ca8e0baa);
 }
