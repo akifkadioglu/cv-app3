@@ -1,12 +1,12 @@
 <template>
-  <div>
-    <div v-if="posts.length == 0" class="text-center font-mono">
-      I haven't written anything yet 😞
-    </div>
+  <div v-if="posts.length == 0" class="mt-10 text-center font-mono">
+    I haven't written anything yet 😞
+  </div>
+  <div class="mt-10 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6">
     <div
       v-for="(item, index) in posts"
       :key="index"
-      class="col-span-1 bg-white mb-10 dark:bg-zinc-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-lg"
+      class="col-span-1 bg-white mb-10 dark:bg-zinc-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-sm"
     >
       <h3
         class="font-mono text-slate-900 dark:text-white text-base font-medium tracking-tight"

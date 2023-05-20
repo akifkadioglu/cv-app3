@@ -1,7 +1,7 @@
 <template>
   <div class="grid w-full px-5">
     <div
-      class="bg-white dark:bg-zinc-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-lg"
+      class="bg-white dark:bg-zinc-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-sm"
     >
       <h3
         class="text-xl font-mono text-orange-500 text-base font-medium tracking-tight"
@@ -14,7 +14,7 @@
       </p>
     </div>
     <div
-      class="mt-5 bg-white dark:bg-zinc-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-lg"
+      class="mt-5 bg-white dark:bg-zinc-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-sm"
     >
       <h3
         class="text-xl font-mono text-orange-500 text-base font-medium tracking-tight"

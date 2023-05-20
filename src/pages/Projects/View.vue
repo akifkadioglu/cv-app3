@@ -4,7 +4,7 @@
     <div
       v-for="(item, index) in projects"
       :key="index"
-      class="col-span-1 bg-white mb-10 dark:bg-zinc-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-lg"
+      class="col-span-1 bg-white mb-10 dark:bg-zinc-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-sm"
     >
       <h3
         class="font-mono text-slate-900 dark:text-white text-base font-medium tracking-tight"

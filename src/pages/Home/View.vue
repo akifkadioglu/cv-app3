@@ -18,16 +18,16 @@
   </div>
 </template>
 <script>
+import Avatar from "../../components/Avatar.vue";
 import Accounts from "./Components/Accounts.vue";
-import Avatar from "./Components/Avatar.vue";
 import Options from "./Components/Options.vue";
 import Skills from "./Components/Skills.vue";
 export default {
   components: {
-    Avatar,
     Skills,
     Accounts,
     Options,
-  },
+    Avatar
+},
 };
 </script>

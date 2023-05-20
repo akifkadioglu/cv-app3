@@ -1,11 +1,10 @@
 <template>
   <router-link to="/" :replace="true">
     <img
+      :class="'w-' + size"
       class="transition rounded-full logo"
-      src="../../../assets/home_avatar.webp"
+      src="../assets/home_avatar.webp"
       alt="akifkadioglu"
-      :width="size"
-      :height="size"
       rel="preload"
     />
   </router-link>
@@ -17,7 +16,7 @@ export default {
   props: {
     size: {
       type: Number,
-      default: 200,
+      default: 52,
     },
   },
   data() {

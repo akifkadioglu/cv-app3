@@ -1,6 +1,6 @@
 <template>
-  <div class="flex my-5 mx-5 justify-between">
-    <Avatar :size="72" />
+  <div class="flex pt-1 mx-5 justify-between">
+    <Avatar :size="16" />
     <SwitchMode />
   </div>
   <div>
@@ -8,9 +8,9 @@
   </div>
 </template>
 <script>
+import Avatar from "../components/Avatar.vue";
 import SwitchMode from "../components/SwitchMode.vue";
-import Avatar from "../pages/Home/Components/Avatar.vue";
 export default {
-  components: { Avatar, SwitchMode },
+  components: { SwitchMode, Avatar },
 };
 </script>
