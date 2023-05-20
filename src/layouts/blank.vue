@@ -6,11 +6,13 @@
   <div>
     <slot />
   </div>
+  <Footer />
 </template>
 <script>
 import SwitchMode from "../components/SwitchMode.vue";
+import Footer from "../components/Footer.vue";
 
 export default {
-  components: { SwitchMode },
+  components: { SwitchMode, Footer },
 };
 </script>

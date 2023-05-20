@@ -10,7 +10,6 @@
         <ProfileAndEducationalTraining />
       </div>
     </div>
-
     <div class="col-span-1">
       <div class="grid gap-4">
         <CareerAndSkills />

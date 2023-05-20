@@ -1,3 +1,5 @@
+import router from "./src/router";
+
 export const functions = {
 
     isMobile() {
@@ -8,8 +10,11 @@ export const functions = {
             return false;
         }
     },
-    goToUrl(url) {
-        window.open(url, "_blank");
+    goToUrl(url, isBlank = true) {
+        console.log(isBlank)
+        window.open(url, isBlank ? "_blank" : null);
     },
-
+    goToPage(name, param) {
+        router.push({ name: name, params: param });
+    },
 }

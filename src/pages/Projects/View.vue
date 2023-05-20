@@ -14,7 +14,7 @@
       <p class="font-mono text-slate-500 dark:text-slate-400 mt-2 text-sm">
         {{ item.content }}
       </p>
-      <div class="flex justify-end">
+      <div class="flex justify-end mt-5">
         <button
           @click="functions.goToUrl(item.link)"
           class="rounded-full bg-zinc-400 px-6 py-1"

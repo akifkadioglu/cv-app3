@@ -2,5 +2,6 @@ export const routeName = {
     HOME:       'Home',
     RESUME:     'Resume',
     PROJECTS:   'Projects',
-    POSTS:      'Posts'
+    BLOG:       'Blog',
+    BLOG_POST:  'BlogPost',
 }

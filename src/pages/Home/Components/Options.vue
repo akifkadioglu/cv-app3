@@ -4,7 +4,7 @@
       v-for="(item, index) in pages"
       :key="index"
       style="width: 90px"
-      @click="goToPage(item.name)"
+      @click="functions.goToPage(item.name)"
       class="transition bg-white hover:drop-shadow-lg text-center dark:bg-zinc-800 rounded-lg px-2 py-8 ring-1 ring-slate-900/5"
     >
       <h3
@@ -23,16 +23,12 @@ export default {
   data() {
     return {
       pages: [
-        { title: "Posts", name: this.routeName.POSTS },
+        { title: "Blog", name: this.routeName.BLOG },
         { title: "Resume", name: this.routeName.RESUME },
         { title: "Projects", name: this.routeName.PROJECTS },
       ],
     };
   },
-  methods: {
-    goToPage(name) {
-      this.$router.push({ name: name });
-    },
-  },
+  
 };
 </script>

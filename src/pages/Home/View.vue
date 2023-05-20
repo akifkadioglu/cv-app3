@@ -13,7 +13,7 @@
   <div class="my-10">
     <Options />
   </div>
-  <div class="mb-16">
+  <div class="mb-10">
     <Accounts />
   </div>
 </template>

@@ -1,6 +1,8 @@
 import Home from '../pages/Home/View.vue'
 import Projects from '../pages/Projects/View.vue'
 import Resume from '../pages/Resume/View.vue'
+import Blog from '../pages/Blog/View.vue'
+import BlogPost from '../pages/BlogPost/View.vue'
 import BlankLayout from '../layouts/blank.vue'
 import OtherLayout from '../layouts/other.vue'
 
@@ -28,9 +30,15 @@ const routes = [
     meta: { layout: OtherLayout },
   },
   {
-    path: '/posts',
-    name: routeName.POSTS,
-    component: Projects,
+    path: '/blog',
+    name: routeName.BLOG,
+    component: Blog,
+    meta: { layout: OtherLayout },
+  },
+  {
+    path: '/blog/:name',
+    name: routeName.BLOG_POST,
+    component: BlogPost,
     meta: { layout: OtherLayout },
   },
   {

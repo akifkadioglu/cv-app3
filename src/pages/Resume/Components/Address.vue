@@ -1,6 +1,6 @@
 <template>
   <div class="grid w-full px-5">
-    <div class="text-2xl">Akif Kadıoğlu</div>
+    <div class="text-2xl font-mono">Akif Kadıoğlu</div>
     <div class="text-x mb-5 font-mono">Software Developer</div>
     <DividerContent text="Reach me" />
     <div class="my-3">
