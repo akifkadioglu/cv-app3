@@ -10,6 +10,8 @@ const toggleDark = useToggle(isDark);
     @click="toggleDark()"
     class="transition ease-in-out delay-50 hover:scale-125 duration-300"
   >
-    <span class="material-icons dark:text-white"> light_mode </span>
+    <mdicon
+      name="white-balance-sunny"
+    />
   </button>
 </template>
