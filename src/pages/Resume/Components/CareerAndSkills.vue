@@ -4,7 +4,7 @@
       class="bg-white dark:bg-zinc-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-lg"
     >
       <h3
-        class=" text-base font-medium tracking-tight"
+        class="text-xl text-base font-medium tracking-tight"
       >
         Career Summary
       </h3>
@@ -25,7 +25,7 @@
       class="mb-10 bg-white dark:bg-zinc-800 mt-5 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-lg"
     >
       <h3
-        class=" text-base font-medium tracking-tight"
+        class="text-xl text-base font-medium tracking-tight"
       >
         Professional Skills
       </h3>
