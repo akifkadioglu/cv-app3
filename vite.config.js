@@ -6,6 +6,12 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
   plugins: [
     vue(),
-    VitePWA()
+    VitePWA({
+      mode: "development",
+      base: "/",
+      srcDir: "src",
+      strategies: "injectManifest",
+      manifest: "manifest.json",
+    })
   ],
 })
