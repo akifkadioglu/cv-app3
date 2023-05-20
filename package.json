@@ -14,10 +14,8 @@
     "markdown-it": "^13.0.1",
     "mdi-vue": "^3.0.13",
     "vue": "^3.2.47",
-    "vue-float-action-button": "^0.7.9",
     "vue-material-design-icons": "^5.2.0",
-    "vue-router": "^4.2.1",
-    "vue3-lazyload": "^0.3.6"
+    "vue-router": "^4.2.1"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.1.0",

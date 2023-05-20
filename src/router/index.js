@@ -41,10 +41,10 @@ const routes = [
     component: BlogPost,
     meta: { layout: OtherLayout },
   },
-  /* {
+  {
     path: '/:pathMatch(.*)*',
     redirect: '/',
-  }, */
+  },
 ]
 
 export default createRouter({
