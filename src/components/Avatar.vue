@@ -1,16 +1,15 @@
 <template>
   <router-link to="/" :replace="true">
-    <div class="w-auto logo overflow-hidden">
+    <div class="transition max-w-full max-h-full logo">
       <img
-      class="transition rounded-full"
-      src="../assets/home_avatar.webp"
-      alt="akifkadioglu"
-      :width="size"
-      :height="size"
-      rel="preload"
-    />
+        class=" rounded-full"
+        src="../assets/home_avatar.webp"
+        alt="akifkadioglu"
+        :width="size"
+        :height="size"
+        rel="preload"
+      />
     </div>
-    
   </router-link>
 </template>
 
