@@ -33,11 +33,11 @@ export default {
   data() {
     return {
       posts: [
-        /* {
+        {
           title: "title 1",
           summary: "summary",
           path: "text",
-        }, */
+        },
       ],
     };
   },

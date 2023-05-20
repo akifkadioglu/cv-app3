@@ -2,7 +2,7 @@
   <router-link to="/" :replace="true">
     <img
       class="transition logo rounded-full"
-      v-lazy="{ src: src }"
+      src="../assets/home_avatar.webp"
       alt="akifkadioglu"
       :width="size"
       :height="size"
