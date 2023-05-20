@@ -1,6 +1,6 @@
 <template>
-  <div class="flex pt-1 mx-5 justify-between">
-    <Avatar :size="16" />
+  <div class="flex my-5 mx-5 justify-between">
+    <Avatar :size="72" />
     <SwitchMode />
   </div>
   <div>
