@@ -12,10 +12,5 @@
   </div>
 </template>
 <script>
-import SwitchMode from "./components/SwitchMode.vue";
-export default {
-  components: {
-    SwitchMode,
-  },
-};
+export default {};
 </script>
