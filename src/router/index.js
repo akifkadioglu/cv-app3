@@ -42,7 +42,7 @@ const routes = [
     meta: { layout: OtherLayout },
   },
   {
-    path: '/:pathMatch(.*)*',
+    path: "/:catchAll(.*)",
     redirect: '/',
   },
 ]

@@ -26,7 +26,6 @@
   </div>
 </template>
 <script>
-import DividerContent from "../../components/DividerContent.vue";
 
 export default {
   data() {
@@ -63,6 +62,5 @@ export default {
       ],
     };
   },
-  components: { DividerContent },
 };
 </script>

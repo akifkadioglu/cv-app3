@@ -30,10 +30,6 @@ export default {
 };
 </script>
 <style scoped>
-.logo {
-  max-width: 100%;
-  max-height: 100%;
-}
 .logo:hover {
   filter: drop-shadow(0 0 1em #ca8e0baa);
 }

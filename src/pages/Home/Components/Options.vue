@@ -16,10 +16,8 @@
   </div>
 </template>
 <script>
-import DividerContent from "../../../components/DividerContent.vue";
 
 export default {
-  components: { DividerContent },
   data() {
     return {
       pages: [
