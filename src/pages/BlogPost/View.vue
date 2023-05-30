@@ -18,7 +18,7 @@
       {{ post.content }}
     </p>
 
-    <p class="flex justify-end font-mono text-lg">
+    <p v-if="_post != null" class="flex justify-end font-mono text-lg">
       {{ new Date(post.created_at.seconds * 1000).toLocaleString() }}
     </p>
   </div>
