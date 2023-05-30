@@ -14,7 +14,7 @@
       {{ post.title }}
     </div>
 
-    <p class="py-5 font-mono">
+    <p class="py-5">
       {{ post.content }}
     </p>
 
