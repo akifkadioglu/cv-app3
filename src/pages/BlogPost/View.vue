@@ -10,11 +10,11 @@
     <div v-if="_post == null" class="flex justify-center my-5">
       <div class="w-7 h-7 border-2 border-gray-300 animate-spin"></div>
     </div>
-    <div class="font-bold text-2xl capitalize flex justify-center">
+    <div class="font-mono font-bold text-2xl capitalize flex justify-center">
       {{ post.title }}
     </div>
 
-    <p class="py-5">
+    <p class="py-5 font-mono">
       {{ post.content }}
     </p>
 
