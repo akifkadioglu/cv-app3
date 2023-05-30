@@ -18,7 +18,16 @@
       {{ post.content }}
     </p>
 
-    <p v-if="_post != null" class="flex justify-end font-mono text-sm">
+    <p
+      v-if="_post != null"
+      class="flex items-center justify-end font-mono text-sm"
+    >
+      <button
+        aria-label="button"
+        class="rounded-full bg-zinc-200 dark:bg-zinc-700 px-6 mx-6 py-1"
+      >
+        view: {{ viewCount }}
+      </button>
       {{ new Date(post.created_at.seconds * 1000).toLocaleString() }}
     </p>
   </div>
@@ -38,13 +47,22 @@ export default {
       return { title: "", content: "", created_at: new Date() };
     },
   },
+
   data() {
     return {
       _post: null,
+      viewCount: 0,
     };
   },
-  mounted() {
+  
+  async mounted() {
     this.loadContent();
+    this.viewCount = await this.fetchFire.count_page_view(
+      this.$route.params.id
+    );
+    this.fetchFire.add_page_view(
+      this.$route.params.id
+    );
   },
   methods: {
     async loadContent() {

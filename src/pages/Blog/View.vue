@@ -5,12 +5,6 @@
   >
     I haven't written anything yet 😞
   </div>
-  <div
-    v-if="posts.length == 0 && isCalled == false"
-    class="flex justify-center my-5"
-  >
-    <div class="w-7 h-7 border-2 border-gray-300 animate-spin"></div>
-  </div>
 
   <div class="mt-10 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6">
     <div v-for="(item, index) in posts" :key="index">
@@ -26,29 +20,36 @@
       />
     </div>
   </div>
+  <div class="flex justify-center my-5">
+    <InfiniteLoading @infinite="getPosts" />
+  </div>
 </template>
 
-<script>
+<script setup>
+import { ref } from "vue";
 import CustomCard from "../../components/CustomCard.vue";
+import InfiniteLoading from "v3-infinite-loading";
+import "v3-infinite-loading/lib/style.css";
+import { fetchFire } from "./../../firebase/functions";
 
-export default {
-  mounted() {
-    this.getPosts();
-  },
-  data() {
-    return {
-      posts: [],
-      isCalled: false,
-    };
-  },
-  methods: {
-    async getPosts() {
-      try {
-        this.posts = await this.fetchFire.getPostsByCreatedAt("Blogs");
-      } catch (e) {}
-      this.isCalled = true;
-    },
-  },
-  components: { CustomCard },
+let posts = ref([]);
+let isCalled = false;
+let limit = 10;
+const getPosts = async ($state) => {
+  try {
+    let request = await fetchFire.getPostsByCreatedAt(
+      "Blogs",
+      limit,
+      posts.value[posts.value.length - 1]
+    );
+    if (request.length == 0) $state.complete();
+    else {
+      posts.value.push(...request);
+      $state.loaded();
+    }
+  } catch (e) {
+    console.log(e);
+  }
+  isCalled = true;
 };
 </script>
