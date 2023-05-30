@@ -11,11 +11,13 @@
   "dependencies": {
     "@mdi/js": "^7.2.96",
     "@vueuse/core": "^10.1.2",
+    "firebase": "^9.22.1",
     "markdown-it": "^13.0.1",
     "mdi-vue": "^3.0.13",
     "vue": "^3.2.47",
     "vue-material-design-icons": "^5.2.0",
-    "vue-router": "^4.2.1"
+    "vue-router": "^4.2.1",
+    "vuefire": "^3.1.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.1.0",

@@ -11,7 +11,6 @@ export const functions = {
         }
     },
     goToUrl(url, isBlank = true) {
-        console.log(isBlank)
         window.open(url, isBlank ? "_blank" : null);
     },
     goToPage(name, param) {

@@ -4,26 +4,43 @@
       class="my-10 flex items-center font-bold font-mono hover:underline"
       @click="$router.replace({ name: routeName.BLOG })"
     >
-      <mdicon
-        :size="isMobile ? 25 : 40"
-        name="arrow-left"
-        aria-label="back button"
-      />
+      <mdicon :size="25" name="arrow-left" aria-label="back button" />
       <span class="mx-2"> Other Posts </span>
     </button>
-    <div v-html="content" />
+    <div v-if="_post == null" class="flex justify-center my-5">
+      <div class="w-7 h-7 border-2 border-gray-300 animate-spin"></div>
+    </div>
+    <div class="font-bold text-2xl capitalize flex justify-center">
+      {{ post.title }}
+    </div>
+
+    <p class="py-5">
+      {{ post.content }}
+    </p>
+
+    <p class="flex justify-end font-mono text-lg">
+      {{ new Date(post.created_at.seconds * 1000).toLocaleString() }}
+    </p>
   </div>
 </template>
 
 <script>
-import MarkdownIt from "markdown-it";
-
 export default {
+  computed: {
+    post() {
+      if (this._post != null) {
+        return {
+          title: this._post.title,
+          content: this._post.content,
+          created_at: this._post.created_at,
+        };
+      }
+      return { title: "", content: "", created_at: new Date() };
+    },
+  },
   data() {
     return {
-      isMobile: this.functions.isMobile(),
-
-      content: "",
+      _post: null,
     };
   },
   mounted() {
@@ -31,14 +48,14 @@ export default {
   },
   methods: {
     async loadContent() {
-      const response = await fetch("/blogs/" + this.$route.params.name + ".md");
-      const markdown = await response.text();
-      if (response.status == 404) {
+      try {
+        this._post = await this.fetchFire.getPostById(
+          "Blogs",
+          this.$route.params.id
+        );
+      } catch (error) {
         alert("There is no such blog");
         this.$router.back();
-      } else {
-        const md = new MarkdownIt();
-        this.content = md.render(markdown);
       }
     },
   },

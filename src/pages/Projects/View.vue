@@ -1,31 +1,17 @@
 <template>
   <div class="mt-10 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6">
-    
-    <div
-      v-for="(item, index) in projects"
-      :key="index"
-      class="col-span-1 bg-white mb-10 dark:bg-zinc-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-sm"
-    >
-      <h3
-        class="font-mono text-slate-900 dark:text-white text-base font-medium tracking-tight"
-      >
-        {{ item.title }}
-      </h3>
-      <p class="font-mono text-slate-500 dark:text-slate-400 mt-2 text-sm">
-        {{ item.content }}
-      </p>
-      <div class="flex justify-end mt-5">
-        <button
-          @click="functions.goToUrl(item.link)"
-          class="rounded-full bg-zinc-400 px-6 py-1"
-        >
-          Visit
-        </button>
-      </div>
+    <div v-for="(item, index) in projects" :key="index">
+      <CustomCard
+        :title="item.title"
+        :content="item.content"
+        buttonText="Visit"
+        @click="functions.goToUrl(item.link)"
+      />
     </div>
   </div>
 </template>
 <script>
+import CustomCard from "../../components/CustomCard.vue";
 
 export default {
   data() {
@@ -48,11 +34,11 @@ export default {
           link: "https://github.com/akifkadioglu/kadiog",
         },
         /* {
-                  content:
-                    "BMI Calculator is an android app for calculate your body mass index.",
-                  title: "BMI Calculator",
-                  link: "https://play.google.com/store/apps/details?id=com.akifkadioglu.bmi_calculator",
-                }, */
+                          content:
+                            "BMI Calculator is an android app for calculate your body mass index.",
+                          title: "BMI Calculator",
+                          link: "https://play.google.com/store/apps/details?id=com.akifkadioglu.bmi_calculator",
+                        }, */
         {
           content:
             "Weather application brings the instantaneous weather conditions of the city or district you type.",
@@ -62,5 +48,6 @@ export default {
       ],
     };
   },
+  components: { CustomCard },
 };
 </script>

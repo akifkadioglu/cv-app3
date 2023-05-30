@@ -11,8 +11,6 @@ const toggleDark = useToggle(isDark);
     aria-label="dark-mode button"
     class="transition ease-in-out delay-50 hover:scale-125 duration-300"
   >
-    <mdicon
-      name="white-balance-sunny"
-    />
+    <mdicon name="white-balance-sunny" class="dark:text-orange-300" />
   </button>
 </template>

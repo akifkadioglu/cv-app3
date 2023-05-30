@@ -36,7 +36,7 @@ const routes = [
     meta: { layout: OtherLayout },
   },
   {
-    path: '/blog/:name',
+    path: '/blog/:id',
     name: routeName.BLOG_POST,
     component: BlogPost,
     meta: { layout: OtherLayout },
