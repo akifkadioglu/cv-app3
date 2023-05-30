@@ -24,7 +24,7 @@
     >
       <button
         aria-label="button"
-        class="rounded-full bg-zinc-200 dark:bg-zinc-700 px-6 mx-6 py-1"
+        class="rounded-full bg-zinc-200 dark:bg-zinc-700 px-6 mx-2 py-1"
       >
         view: {{ viewCount }}
       </button>
