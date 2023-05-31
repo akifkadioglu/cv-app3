@@ -1,12 +1,21 @@
 <template>
   <div>
-    <button
-      class="my-10 flex items-center font-bold font-mono hover:underline"
-      @click="$router.replace({ name: routeName.BLOG })"
-    >
-      <mdicon :size="25" name="arrow-left" aria-label="back button" />
-      <span class="mx-2"> Other Posts </span>
-    </button>
+    <div class="flex items-center justify-between">
+      <button
+        class="my-10 flex items-center font-bold font-mono hover:underline"
+        @click="$router.replace({ name: routeName.BLOG })"
+      >
+        <mdicon :size="25" name="arrow-left" aria-label="back button" />
+        <span class="mx-2"> Other Posts </span>
+      </button>
+      <button
+        class="my-10 flex items-center font-bold font-mono hover:underline"
+        @click="copyURL"
+      >
+        <mdicon :size="25" name="share-variant" aria-label="back button" />
+      </button>
+    </div>
+
     <div v-if="_post == null" class="flex justify-center my-5">
       <div class="w-7 h-7 border-2 border-gray-300 animate-spin"></div>
     </div>
@@ -86,6 +95,10 @@ export default {
         alert("There is no such blog");
         this.$router.back();
       }
+    },
+    async copyURL() {
+      await navigator.clipboard.writeText(window.location.href);
+      alert("Copied to clipboard");
     },
   },
 };
