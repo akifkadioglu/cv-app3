@@ -17,7 +17,7 @@
     <div v-html="post.content" class="py-5" />
     <p
       v-if="_post != null"
-      class="flex items-center justify-end font-mono text-sm"
+      class="flex items-center mb-28 justify-end font-mono text-sm"
     >
       <button
         aria-label="button"
