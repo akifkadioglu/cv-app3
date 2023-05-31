@@ -14,10 +14,7 @@
       {{ post.title }}
     </div>
 
-    <p class="py-5">
-      {{ post.content }}
-    </p>
-
+    <div v-html="post.content" class="py-5" />
     <p
       v-if="_post != null"
       class="flex items-center justify-end font-mono text-sm"
@@ -38,9 +35,28 @@ export default {
   computed: {
     post() {
       if (this._post != null) {
+        var content = this._post.content;
+        content = content.replace(
+          "<a",
+          `<a target="_blank" class="hover:underline font-bold text-cyan-700  dark:text-cyan-400"`
+        );
+        content = content.replace(
+          "<blockquote",
+          `<blockquote class="text-xl italic font-semibold text-gray-900 dark:text-white ml-10"`
+        );
+        content = content.replace("oembed", `iframe`);
+        content = content.replace("url", "src");
+        content = content.replace("watch?v=", "embed/");
+        content = content.replace(
+          `figure class="media"`,
+          `figure class="flex justify-center"`
+        );
+
+        content = content.replace("oembed", "iframe");
+
         return {
           title: this._post.title,
-          content: this._post.content,
+          content: content,
           created_at: this._post.created_at,
         };
       }
@@ -54,15 +70,13 @@ export default {
       viewCount: 0,
     };
   },
-  
+
   async mounted() {
     this.loadContent();
     this.viewCount = await this.fetchFire.count_page_view(
       this.$route.params.id
     );
-    this.fetchFire.add_page_view(
-      this.$route.params.id
-    );
+    this.fetchFire.add_page_view(this.$route.params.id);
   },
   methods: {
     async loadContent() {
@@ -79,3 +93,10 @@ export default {
   },
 };
 </script>
+<style>
+iframe {
+  aspect-ratio: 16 / 10;
+  width: 100%;
+  max-width: 720px;
+}
+</style>
