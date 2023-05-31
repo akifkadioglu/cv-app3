@@ -57,7 +57,7 @@ export default {
         content = content.replace(/watch\?v=/g, "embed/");
         content = content.replace(
           /figure class="media"/g,
-          `figure class="flex justify-center"`
+          `figure class="flex justify-center my-10"`
         );
 
         return {
