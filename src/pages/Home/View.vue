@@ -52,7 +52,7 @@ export default {
     const mesh = this.$refs.mesh.mesh;
     renderer.three.setSize(200, 250);
     renderer.onBeforeRender(() => {
-      mesh.rotation.x += 0.01;
+      mesh.rotation.x += 0.001;
     });
   },
 };
