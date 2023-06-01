@@ -36,7 +36,6 @@
   </div>
 </template>
 <script>
-import Avatar from "../../components/Avatar.vue";
 import Accounts from "./Components/Accounts.vue";
 import Options from "./Components/Options.vue";
 import Skills from "./Components/Skills.vue";
@@ -45,7 +44,6 @@ export default {
     Skills,
     Accounts,
     Options,
-    Avatar,
   },
   mounted() {
     const renderer = this.$refs.renderer;
