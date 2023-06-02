@@ -43,26 +43,9 @@ export default {
   computed: {
     post() {
       if (this._post != null) {
-        var content = this._post.content;
-        content = content.replace(
-          /<a/g,
-          `<a target="_blank" class="hover:underline font-bold text-cyan-700  dark:text-cyan-400"`
-        );
-        content = content.replace(
-          /<blockquote/g,
-          `<blockquote class="text-xl italic font-semibold text-gray-900 dark:text-white ml-10"`
-        );
-        content = content.replace(/oembed/g, `iframe`);
-        content = content.replace(/url=/g, "src=");
-        content = content.replace(/watch\?v=/g, "embed/");
-        content = content.replace(
-          /figure class="media"/g,
-          `figure class="flex justify-center my-10"`
-        );
-
         return {
           title: this._post.title,
-          content: content,
+          content: this._post.content,
           created_at: this._post.created_at,
         };
       }
