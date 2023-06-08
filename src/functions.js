@@ -1,4 +1,4 @@
-import router from "./src/router";
+import { router } from "./router";
 
 export const functions = {
 

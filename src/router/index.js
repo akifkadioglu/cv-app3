@@ -9,7 +9,7 @@ import OtherLayout from '../layouts/other.vue'
 import { routeName } from './routeName'
 import { createRouter, createWebHistory } from 'vue-router'
 
-const routes = [
+export const routes = [
   {
     path: '/',
     name: routeName.HOME,
@@ -46,7 +46,7 @@ const routes = [
   },
 ]
 
-const router = createRouter({
+export const router = createRouter({
   history: createWebHistory(),
   routes,
 })
@@ -54,5 +54,3 @@ router.beforeEach((to, from, next) => {
   document.title = to.name;
   next();
 });
-
-export default router
