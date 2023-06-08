@@ -1,7 +1,7 @@
 export const routeName = {
-    HOME:       'Home',
-    RESUME:     'Resume',
-    PROJECTS:   'Projects',
-    BLOG:       'Blog',
-    BLOG_POST:  'BlogPost',
+    HOME:       'Home | Akif Kadioglu',
+    RESUME:     'Resume | Akif Kadioglu',
+    PROJECTS:   'Projects | Akif Kadioglu',
+    BLOG:       'Blog | Akif Kadioglu',
+    BLOG_POST:  'Akif Kadioglu',
 }

@@ -15,7 +15,6 @@ const routes = [
     name: routeName.HOME,
     component: Home,
     meta: { layout: BlankLayout },
-
   },
   {
     path: '/projects',
@@ -47,7 +46,13 @@ const routes = [
   },
 ]
 
-export default createRouter({
+const router = createRouter({
   history: createWebHistory(),
   routes,
 })
+router.beforeEach((to, from, next) => {
+  document.title = to.name;
+  next();
+});
+
+export default router

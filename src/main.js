@@ -1,14 +1,13 @@
 import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
-import router from './router'
 import mdiVue from 'mdi-vue/v3'
 import * as mdijs from '@mdi/js'
 import { functions } from '../functions';
 import { routeName } from './router/routeName';
 import { fetchFire } from './firebase/functions'
 import { TroisJSVuePlugin } from 'troisjs';
-
+import router from './router'
 
 let app = createApp(App)
 app.config.globalProperties.functions = functions

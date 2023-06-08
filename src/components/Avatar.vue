@@ -1,5 +1,5 @@
 <template>
-  <router-link to="/" :replace="true">
+  <router-link to="/">
     <img
       class="transition logo rounded-full"
       src="../assets/home_avatar.webp"

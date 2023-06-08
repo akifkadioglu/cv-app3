@@ -19,20 +19,21 @@
       </Scene>
     </Renderer>
   </div>
-  <div class="flex justify-center my-5"></div>
-  <div class="flex justify-center my-5">
-    <div class="transition duration-300 font-mono text-2xl hover:underline">
-      Akif Kadioglu
+  <div class="space-y-11">
+    <div class="flex justify-center">
+      <div class="transition duration-300 font-mono text-2xl hover:underline">
+        <div>Akif Kadioglu</div>
+      </div>
     </div>
-  </div>
-  <div>
-    <Skills />
-  </div>
-  <div class="my-10">
-    <Options />
-  </div>
-  <div class="mb-10">
-    <Accounts />
+    <div>
+      <Skills />
+    </div>
+    <div>
+      <Options />
+    </div>
+    <div>
+      <Accounts />
+    </div>
   </div>
 </template>
 <script>

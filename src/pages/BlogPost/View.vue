@@ -3,7 +3,7 @@
     <div class="flex items-center justify-between">
       <button
         class="my-10 flex items-center font-bold font-mono hover:underline"
-        @click="$router.replace({ name: routeName.BLOG })"
+        @click="$router.push({ name: routeName.BLOG })"
       >
         <mdicon :size="25" name="arrow-left" aria-label="back button" />
         <span class="mx-2"> Other Posts </span>
@@ -74,6 +74,7 @@ export default {
           "Blogs",
           this.$route.params.id
         );
+        document.title = this._post.title + " | Akif Kadioglu";
       } catch (error) {
         alert("There is no such blog");
         this.$router.back();
