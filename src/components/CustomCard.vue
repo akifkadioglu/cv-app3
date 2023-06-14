@@ -7,9 +7,8 @@
     >
       {{ title }}
     </h3>
-    
     <div
-      v-html="content.substring(0, 57)+'...'"
+      v-html="fixedContent"
       class="line-clamp-2 font-mono text-slate-500 dark:text-slate-400 mt-2 text-sm"
     ></div>
     <div class="flex justify-end mt-5">
@@ -40,6 +39,16 @@ export default {
     },
     click: {
       type: Function,
+    },
+    maxLength: {
+      type: Number,
+      default: 60,
+    },
+  },
+  computed: {
+    fixedContent() {
+      var content = this.content.substring(0, this.maxLength);
+      return content.slice(0, content.lastIndexOf(" "));
     },
   },
 };

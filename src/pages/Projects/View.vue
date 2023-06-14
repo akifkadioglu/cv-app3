@@ -5,6 +5,7 @@
         :title="item.title"
         :content="item.content"
         buttonText="Visit"
+        :maxLength="75"
         @click="functions.goToUrl(item.link)"
       />
     </div>
@@ -18,30 +19,35 @@ export default {
     return {
       projects: [
         {
+          content: "DreamVerse is an app to share your dreams ",
+          title: "DreamVerse",
+          link: "https://dream-verse.netlify.app/",
+        },
+        {
           content:
-            "P-Okul is a note sharing application written for Pamukkale University.",
+            "P-Okul is a note sharing application written for Pamukkale University. ",
           title: "P-Okul",
           link: "https://www.p-okul.net/",
         },
         {
-          content: "Pretty simple.. Diary App:D",
+          content: "Pretty simple.. Diary App:D ",
           title: "Diary App",
           link: "https://akifkadioglu-diary-app.netlify.app",
         },
         {
-          content: "Kadiog is an API setup using Echo and Gorm libraries.",
+          content: "Kadiog is an API setup using Echo and Gorm libraries. ",
           title: "Kadiog",
           link: "https://github.com/akifkadioglu/kadiog",
         },
         /* {
-                          content:
-                            "BMI Calculator is an android app for calculate your body mass index.",
-                          title: "BMI Calculator",
-                          link: "https://play.google.com/store/apps/details?id=com.akifkadioglu.bmi_calculator",
-                        }, */
+          content:
+            "BMI Calculator is an android app for calculate your body mass index.",
+          title: "BMI Calculator",
+          link: "https://play.google.com/store/apps/details?id=com.akifkadioglu.bmi_calculator",
+        }, */
         {
           content:
-            "Weather application brings the instantaneous weather conditions of the city or district you type.",
+            "Weather application brings the instantaneous weather conditions of the city or district you type. ",
           title: "Weather App",
           link: "https://play.google.com/store/apps/details?id=com.akifkadioglu.weather_app_flutter",
         },
