@@ -26,7 +26,7 @@ export default {
         {
           content: "Pretty simple.. Diary App:D",
           title: "Diary App",
-          link: "https://github.com/akifkadioglu/kadiog",
+          link: "https://akifkadioglu-diary-app.netlify.app",
         },
         {
           content: "Kadiog is an API setup using Echo and Gorm libraries.",
