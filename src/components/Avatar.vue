@@ -2,7 +2,7 @@
   <router-link to="/">
     <img
       class="transition logo rounded-full"
-      src="../assets/home_avatar.webp"
+      src="../assets/avatar.webp"
       alt="akifkadioglu"
       :width="size"
       :height="size"
@@ -12,7 +12,6 @@
 </template>
 
 <script>
-import image from './../assets/home_avatar.webp'
 
 export default {
   name: "Home-Avatar",
@@ -22,15 +21,10 @@ export default {
       default: 200,
     },
   },
-  data() {
-    return {
-      src:image
-    };
-  },
 };
 </script>
 <style scoped>
 .logo:hover {
-  filter: drop-shadow(0 0 1em #ca8e0baa);
+  filter: drop-shadow(0 0 1em #23b3cdaa);
 }
 </style>
