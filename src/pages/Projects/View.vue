@@ -19,6 +19,11 @@ export default {
     return {
       projects: [
         {
+          content: "SecretChat allows you to talk to the people you want without saving your messages.",
+          title: "SecretChat",
+          link: "https://talk-secretly.netlify.app/",
+        },
+        {
           content: "DreamVerse is an app to share your dreams ",
           title: "DreamVerse",
           link: "https://dream-verse.netlify.app/",

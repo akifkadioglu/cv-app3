@@ -9,10 +9,14 @@
         <span class="mx-2"> Other Posts </span>
       </button>
       <button
-        class="my-10 flex items-center font-bold font-mono hover:underline"
+        class="my-10 flex space-x-3 items-center font-mono text-xs"
         @click="copyURL"
       >
-        <mdicon :size="25" name="share-variant" aria-label="back button" />
+        <mdicon
+          :size="25"
+          name="share-variant-outline"
+          aria-label="copy button"
+        />
       </button>
     </div>
 
@@ -99,7 +103,10 @@ export default {
     },
     async copyURL() {
       await navigator.clipboard.writeText(window.location.href);
-      alert("Copied to clipboard");
+      this.$snackbar.add({
+        type: "success",
+        text: "Link copied to clipboard!",
+      });
     },
   },
 };
