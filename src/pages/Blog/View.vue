@@ -47,9 +47,7 @@ const getPosts = async ($state) => {
       posts.value.push(...request);
       $state.loaded();
     }
-  } catch (e) {
-    console.log(e);
-  }
+  } catch (e) {}
   isCalled = true;
 };
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <footer class="text-center font-mono mt-10 space-y-3">
+  <footer class="text-center font-mono my-10 space-y-3">
     <div>
       You can access the
       <a

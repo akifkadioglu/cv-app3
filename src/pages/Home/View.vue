@@ -7,7 +7,7 @@
         <Mesh
           ref="mesh"
           cast-shadow
-          :rotation="{ y: Math.PI / 4+ 5.5, z: Math.PI / 4 + 5.5 }"
+          :rotation="{ y: Math.PI / 4 + 5.5, z: Math.PI / 4 + 5.5 }"
         >
           <CircleGeometry :segments="40" />
           <BasicMaterial :props="{ side: 2 }">

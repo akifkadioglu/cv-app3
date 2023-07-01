@@ -73,21 +73,9 @@ export default {
     this.fetchFire.add_page_view(this.$route.params.id);
   },
   methods: {
+    
     changeMetaTags() {
-      var content = this._post.content.replace(/<[^>]+>/g, "").substring(0, 60);
-      content = content.slice(0, content.lastIndexOf(" "));
-
       document.title = this._post.title + " | Akif Kadioglu";
-
-      document
-        .querySelector('meta[property="og:title"]')
-        .setAttribute("content", this._post.title);
-      document
-        .querySelector('meta[property="og:description"]')
-        .setAttribute("content", content);
-      document
-        .querySelector('meta[name="description"]')
-        .setAttribute("content", content);
     },
 
     async loadContent() {

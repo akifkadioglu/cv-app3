@@ -1,20 +1,12 @@
 import { defineConfig } from 'vite'
-import { VitePWA } from 'vite-plugin-pwa'
 import vue from '@vitejs/plugin-vue'
 import sitemap from 'vite-plugin-sitemap';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  build: {
-    rollupOptions: {
-      output: {
-        format: 'esm',
-      },
-    },
-  },
+  build: {},
   plugins: [
     vue(),
-    VitePWA(),
     sitemap({
       hostname: 'https://www.akifkadioglu.dev/',
       exclude: [],
