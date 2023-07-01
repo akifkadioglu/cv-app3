@@ -2,6 +2,8 @@
   "name": "Akif Kadıoğlu",
   "short_name": "Akif Kadıoğlu",
   "theme_color": "#0078a6",
+  "start_url": "./",
+  "scope": ".",
   "icons": [
     {
       "src": "./img/icons/android-chrome-192x192.png",
