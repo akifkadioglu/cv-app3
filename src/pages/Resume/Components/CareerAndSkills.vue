@@ -44,14 +44,14 @@
       <div class="mt-5">
         <div class="font-mono font-bold">Coding Languages:</div>
         <div class="font-mono text-sm">
-          GoLang, PHP, Dart, Python(Less), JavaScript, HTML/CSS
+          GoLang, Dart, JavaScript, HTML/CSS
         </div>
       </div>
       <div class="mt-5">
         <div class="font-mono font-bold">Frameworks/Systems:</div>
         <div class="font-mono text-sm">
-          MVC, Laravel, Tailwind, Golang/Echo, FastAPI(Less), bootstrap, Vue,
-          Vuetify, Flutter, Visual Studio Code, JetBrains(for GoLang)
+          MVC, Laravel, Tailwind, Chi(GoLang), Ent(GoLang), Gorm(GoLang), FastAPI, Tailwind CSS, Vue,
+          Vuetify, Flutter
         </div>
       </div>
     </div>

@@ -28,7 +28,10 @@
         </div>
       </div>
       <div class="mt-5">
-        <div class="font-mono font-bold">Pamukkale University</div>
+        <div class="font-mono font-bold">
+          Pamukkale University
+          <small class="text-xs">2020 - 2024</small>
+        </div>
         <div class="font-mono text-sm">
           Bachelor's Degree in Computer Science
         </div>

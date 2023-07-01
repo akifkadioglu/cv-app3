@@ -5,15 +5,23 @@
     <DividerContent text="Reach me" />
     <div class="my-3">
       <div class="font-bold font-mono">Cell:</div>
-      <div class="font-mono">+90 555 880 3528</div>
+      <div class="font-mono">
+        <a href="tel:+905558803528" target="_blank"> +90 555 880 3528 </a>
+      </div>
     </div>
     <div class="my-3">
       <div class="font-bold font-mono">E-mail:</div>
-      <div class="font-mono">akifkadioglu@yaani.com</div>
+      <div class="font-mono">
+        <a href="mailto:akifkadioglu@yaani.com" target="_blank"> akifkadioglu@yaani.com </a>
+      </div>
     </div>
     <div class="my-3">
       <div class="font-bold font-mono">LinkedIn:</div>
-      <div class="font-mono">@akifkadioglu</div>
+      <div class="font-mono">
+        <a href="https://www.linkedin.com/in/akif-kadioglu-88429a1b2/" target="_blank">
+          @akifkadioglu
+        </a>
+      </div>
     </div>
   </div>
 </template>
