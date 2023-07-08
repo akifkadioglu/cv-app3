@@ -26,7 +26,7 @@ export default {
     return {
       isMobile: this.functions.isMobile(),
       contacts: [
-        {
+      {
           icon: "github",
           title: "GitHub",
           url: "https://github.com/akifkadioglu",
@@ -37,6 +37,12 @@ export default {
           title: "GitLab",
           url: "https://gitlab.com/akifkadioglu",
           color: "#FC6D27",
+        },
+        {
+          icon: "youtube",
+          title: "YouTube",
+          url: "https://www.youtube.com/channel/UCMVyPOiByM3jJSUEsBzEdww",
+          color: "#FF0000",
         },
         {
           icon: "linkedin",
