@@ -31,7 +31,7 @@
         <div class="font-mono font-bold">
           <a
             class="hover:underline"
-            href="https://www.youtube.com/watch?v=686rk8MoAvk&list=PLpatsBlZjP4o4H4Rbs6BoPnACnRx5nqxQ"
+            href="https://www.youtube.com/playlist?list=PLpatsBlZjP4o4H4Rbs6BoPnACnRx5nqxQ"
             >YouTube Playlist</a
           >
         </div>
