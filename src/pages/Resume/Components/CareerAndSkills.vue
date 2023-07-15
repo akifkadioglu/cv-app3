@@ -4,27 +4,40 @@
       class="bg-white dark:bg-zinc-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-sm"
     >
       <h3
-        class="text-xl font-mono text-orange-500 text-base font-medium tracking-tight"
+        class="text-xl space-y-5 font-mono text-orange-500 text-base font-medium tracking-tight"
       >
         Career Summary
       </h3>
-      <div class="mt-5">
+      <div>
         <div class="font-mono font-bold">Job</div>
         <div class="font-mono text-sm">
           I am currently working at
           <a class="hover:underline" href="https://veriyaz.com.tr/">veriyaz</a>
         </div>
       </div>
-      <div class="mt-5">
+      <div>
         <div class="font-mono font-bold">Freelancer</div>
         <div class="font-mono text-sm">
           I worked as a freelancer on sites like Bionluk, Sahibinden.
         </div>
       </div>
-      <div class="mt-5">
+      <div>
         <div class="font-mono font-bold">Hobby Projects</div>
         <div class="font-mono text-sm">
           I developed hobby apps for myself for Play Store
+        </div>
+      </div>
+      <div>
+        <div class="font-mono font-bold">
+          <a
+            class="hover:underline"
+            href="https://www.youtube.com/watch?v=686rk8MoAvk&list=PLpatsBlZjP4o4H4Rbs6BoPnACnRx5nqxQ"
+            >YouTube Playlist</a
+          >
+        </div>
+        <div class="font-mono text-sm">
+          I have a playlist on YouTube where I explain how to build an API with
+          GoLang
         </div>
       </div>
     </div>
@@ -43,15 +56,13 @@
 
       <div class="mt-5">
         <div class="font-mono font-bold">Coding Languages:</div>
-        <div class="font-mono text-sm">
-          GoLang, Dart, JavaScript, HTML/CSS
-        </div>
+        <div class="font-mono text-sm">GoLang, Dart, JavaScript, HTML/CSS</div>
       </div>
       <div class="mt-5">
         <div class="font-mono font-bold">Frameworks/Systems:</div>
         <div class="font-mono text-sm">
-          MVC, Laravel, Tailwind, Chi(GoLang), Ent(GoLang), Gorm(GoLang), FastAPI, Tailwind CSS, Vue,
-          Vuetify, Flutter
+          MVC, Laravel, Tailwind, Chi(GoLang), Ent(GoLang), Gorm(GoLang),
+          FastAPI, Tailwind CSS, Vue, Vuetify, Flutter
         </div>
       </div>
     </div>
