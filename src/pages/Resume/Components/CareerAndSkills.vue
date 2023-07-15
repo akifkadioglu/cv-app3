@@ -1,10 +1,10 @@
 <template>
   <div class="grid w-full px-5">
     <div
-      class="bg-white dark:bg-zinc-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-sm"
+      class="bg-white space-y-5 dark:bg-zinc-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-sm"
     >
       <h3
-        class="text-xl space-y-5 font-mono text-orange-500 text-base font-medium tracking-tight"
+        class="text-xl font-mono text-orange-500 text-base font-medium tracking-tight"
       >
         Career Summary
       </h3>
