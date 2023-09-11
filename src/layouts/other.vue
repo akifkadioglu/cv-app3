@@ -1,7 +1,8 @@
 <template>
-  <div class="flex my-5 mx-5 justify-between">
+  <div class="flex my-5 mx-5 justify-between items-center">
     <Avatar :size="72" />
-    <SwitchMode />
+    <div class="mx-auto text-3xl font-mono font-bold">{{ $route.name }}</div>
+    <SwitchMode class="mx-6" />
   </div>
   <div>
     <slot />

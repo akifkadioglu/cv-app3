@@ -5,7 +5,6 @@ import mdiVue from 'mdi-vue/v3'
 import * as mdijs from '@mdi/js'
 import { functions } from './functions';
 import { routeName } from './router/routeName';
-import { fetchFire } from './firebase/functions'
 import { TroisJSVuePlugin } from 'troisjs';
 import { router } from './router'
 
@@ -14,7 +13,6 @@ import "vue3-snackbar/styles";
 
 let app = createApp(App)
 app.config.globalProperties.functions = functions
-app.config.globalProperties.fetchFire = fetchFire
 app.config.globalProperties.routeName = routeName
 
 app

@@ -1,8 +1,7 @@
 import Home from '../pages/Home/View.vue'
 import Projects from '../pages/Projects/View.vue'
 import Resume from '../pages/Resume/View.vue'
-import Blog from '../pages/Blog/View.vue'
-import BlogPost from '../pages/BlogPost/View.vue'
+import Media from '../pages/Media/View.vue'
 import BlankLayout from '../layouts/blank.vue'
 import OtherLayout from '../layouts/other.vue'
 
@@ -29,15 +28,9 @@ export const routes = [
     meta: { layout: OtherLayout },
   },
   {
-    path: '/blog',
-    name: routeName.BLOG,
-    component: Blog,
-    meta: { layout: OtherLayout },
-  },
-  {
-    path: '/blog/:id',
-    name: routeName.BLOG_POST,
-    component: BlogPost,
+    path: '/media',
+    name: routeName.MEDIA,
+    component: Media,
     meta: { layout: OtherLayout },
   },
   {
@@ -50,7 +43,3 @@ export const router = createRouter({
   history: createWebHistory(),
   routes,
 })
-router.beforeEach((to, from, next) => {
-  document.title = to.name;
-  next();
-});

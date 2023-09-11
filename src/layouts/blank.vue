@@ -1,6 +1,6 @@
 <template>
   <div class="flex mt-11 mx-5 mt-16 justify-end">
-    <SwitchMode />
+    <SwitchMode class="mx-6" />
   </div>
   <div>
     <slot />

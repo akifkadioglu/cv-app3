@@ -24,9 +24,9 @@ export default {
     return {
       pages: [
         {
-          title: "Blog",
-          name: this.routeName.BLOG,
-          icon: "script-text",
+          title: "Media",
+          name: this.routeName.MEDIA,
+          icon: "image-outline",
           color: "text-red-600 dark:text-red-400",
         },
         {
