@@ -1,6 +1,6 @@
 <template>
-  <div class="flex justify-center my-10 font-mono">
-    I'm a Graffiti artist, I will share my digital works here
+  <div class="flex justify-center text-sm m-10 font-mono">
+   Also I'm a Graffiti artist, I'm sharing my digital works here
   </div>
   <div
     class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6 items-center"
@@ -10,12 +10,12 @@
       :key="index"
       class="dark:text-zinc-800 text-zinc-200 content"
     >
-      <img :src="item" />
+      <img :src="item" :alt="item" />
       <div class="flex justify-evenly">
-        <button @click="show(item)">
+        <button aria-label="show" @click="show(item)">
           <mdicon name="eye-outline" class="dark:text-white text-black" />
         </button>
-        <button @click="copyURL(item)">
+        <button aria-label="copy" @click="copyURL(item)">
           <mdicon name="share-outline" class="dark:text-white text-black" />
         </button>
       </div>
@@ -41,7 +41,6 @@ const show = (url) => {
   window.open(url);
 };
 const copyURL = async (url) => {
-  console.log(url);
   await navigator.clipboard.writeText(window.location.host + url);
   snackbar.add({
     type: "success",

@@ -5,14 +5,19 @@
     <DividerContent text="Reach me" />
     <div class="my-3">
       <div class="font-bold font-mono">E-mail:</div>
-      <div class="font-mono">
-        <a href="mailto:akifkadioglu@yaani.com" target="_blank"> akifkadioglu@yaani.com </a>
+      <div class="font-mono hover:underline">
+        <a href="mailto:akifkadioglu@yaani.com" target="_blank">
+          akifkadioglu@yaani.com
+        </a>
       </div>
     </div>
     <div class="my-3">
       <div class="font-bold font-mono">LinkedIn:</div>
-      <div class="font-mono">
-        <a href="https://www.linkedin.com/in/akif-kadioglu-88429a1b2/" target="_blank">
+      <div class="font-mono hover:underline">
+        <a
+          href="https://www.linkedin.com/in/akif-kadioglu-88429a1b2/"
+          target="_blank"
+        >
           @akifkadioglu
         </a>
       </div>

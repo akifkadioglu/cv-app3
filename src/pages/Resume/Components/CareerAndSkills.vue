@@ -11,7 +11,7 @@
       <div>
         <div class="font-mono font-bold">Job</div>
         <div class="font-mono text-sm">
-          I am currently working at
+          Freelancer | Ex
           <a class="hover:underline" href="https://veriyaz.com.tr/">veriyaz</a>
         </div>
       </div>
@@ -51,19 +51,18 @@
         Professional Skills
       </h3>
       <p class="font-mono mt-2 text-sm">
-        I've worked alone so far so I know a lot of languages ​​but I've
+        I've worked alone so far so I've worked with a lot of languages but I've
         concentrated on the following languages
       </p>
 
       <div class="mt-5">
         <div class="font-mono font-bold">Coding Languages:</div>
-        <div class="font-mono text-sm">GoLang, Dart, JavaScript, HTML/CSS</div>
+        <div class="font-mono text-sm">GoLang, Dart, JavaScript</div>
       </div>
       <div class="mt-5">
-        <div class="font-mono font-bold">Frameworks/Systems:</div>
+        <div class="font-mono font-bold">Frameworks</div>
         <div class="font-mono text-sm">
-          MVC, Laravel, Tailwind, Chi(GoLang), Ent(GoLang), Gorm(GoLang),
-          FastAPI, Tailwind CSS, Vue, Vuetify, Flutter
+          Tailwind, FastAPI, Vue, Vuetify, Flutter
         </div>
       </div>
     </div>
