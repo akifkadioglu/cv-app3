@@ -12,7 +12,7 @@
           <CircleGeometry :segments="40" />
           <BasicMaterial :props="{ side: 2 }">
             <Texture
-              src="../../../public/logo.png"
+              src="https://raw.githubusercontent.com/akifkadioglu/cv-app3/main/public/logo.png"
             />
           </BasicMaterial>
         </Mesh>
